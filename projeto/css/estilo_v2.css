@@ -1,0 +1,1017 @@
+:root {
+
+  --primaria: #e1bdef;
+  --secundaria: #bf72bf;
+  --terciaria: #fff0f5;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+  text-align: center;
+  margin: 32px 0 16px;
+}
+
+p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+label {
+  margin-left: 2px;
+  font-size: 0.9rem;
+}
+select {
+  outline: none;
+  overflow: hidden !important;
+  -webkit-appearance: none; /* Remove a aparência padrão do elemento */
+  scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--secundaria);
+  text-align: center;
+}
+
+input:read-only{
+  background-color: #e9ecef;
+}
+
+input[type="date"]{
+  width: 112px;
+}
+
+select::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem no Chrome/Safari */
+}
+
+option{
+  padding: 4px 8px;
+  text-align: left;
+}
+input {
+  box-sizing: border-box;
+  padding: 0 6px;
+  width: 176px;
+  height: 25px;
+  border: 1px solid var(--secundaria);
+  border-radius: 5px;
+  outline: none;
+}
+
+
+input[type="number"]{
+  width: 80px;
+}
+
+body {
+  background-color: #EEEEFF !important;
+}
+
+button {
+  background-color: var(--primaria);
+  border: 1px solid var(--secundaria);
+  border-radius: 5px;
+  width: 144px;
+  height: 25px;
+}
+
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: 100%;
+}
+
+header {
+  box-shadow: var(--primaria) 0px 0px 10px 4px;
+}
+.index-card, .plano-card {
+  border-radius: 5px;
+  box-shadow: var(--secundaria) -2px 2px 8px;
+}
+
+.plano-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lista-precos{
+  padding: 0 !important;
+  justify-content: center !important;
+  gap: 32px !important;
+}
+.plano-card ul {
+  margin-top: 16px;
+}
+.style-box{
+  background-color: #fff;
+  border: 1px solid var(--primaria);
+  border-radius: 5px;
+  box-shadow: var(--primaria) -2px 2px 6px;
+}
+
+#horarios {
+    height: 350px;
+    width: 100%;
+    overflow-y:scroll;
+    list-style: none;
+}
+
+#horarios li {
+    border-top: var(--primaria) 1px solid;
+    width: 95%;
+}
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; 
+
+  }
+  
+  /* Estilo da área de trilha (track) da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    height: 200px;
+  }
+  
+  /* Estilo do "pulgar" (thumb) da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 5px;
+  }
+  
+  /* Estilo do "pulgar" (thumb) da barra de rolagem quando estiver em hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  }
+  
+
+  .lista {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    max-height: 318px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .lista > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--primaria);
+    height: inherit;
+    z-index: 1;
+  }
+
+  .lista div {
+    
+  }
+
+
+  .box {
+    
+    width: auto;
+  }
+
+  .item {
+      position: relative;
+   width: 100%;
+   height: 152px;
+   border-bottom: 1px solid var(--primaria);
+  }
+
+  .item-border {
+    border-bottom: var(--primaria) 1px solid;
+  }
+  .box p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+#msg {
+
+}
+
+#financeiro{
+  margin: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}  
+
+#relatorio{
+  margin-left: 64px;
+  width: 384px;
+  height: fit-content;
+  padding: 0 0 32px;
+}
+
+/* FAZ OS NOMES FICAREM EM CIMA DA LABEL*/
+#relat_form div, #form_finan div, #formServ div, #cad_fun div,
+.func-lista div, #cad_cli div, .cli_card > div, #meuform > div{
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  height: fit-content;
+}
+
+  #gastos{
+  width: 496px;
+  height: fit-content;
+  padding: 0 16px 32px;
+}
+
+
+#form_finan, #relat_form, #cad_fun, #cad_cli{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#cad_fun{
+  max-width: 368px;
+}
+#relat_form {
+  gap: 16px 32px;
+}
+
+#form_finan :first-child input{
+  min-width: 144px;
+  max-width: 304px;
+}
+
+#relat_form input, #relat_form select, #form_finan input, #form_finan select{
+  width: 144px;
+  
+}
+
+#relat_form button, #form_finan button{
+  align-self: end;
+}
+
+
+
+.div_tab {
+  margin-top: 32px;
+  height: auto;
+  width: max(300px, 1040px);
+
+}
+#tabela{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#tabela th, #tabela td {
+  border: 1px solid var(--primaria);
+  padding: 8px;
+  height: 32px;
+}
+
+
+#tabela input{
+  border: none;
+  text-align: center;
+  width: auto;
+}
+
+#tabela th:nth-child(3), #tabela td:nth-child(3){
+  padding: 0 8px;
+}
+#botao_fin {
+  margin: 16px 36px 0 auto
+}
+
+#total_saida, #total_entrada {
+  width: 100%;
+}
+
+.scroll {
+  max-height: 600px;
+  overflow: auto;
+}
+
+.oculto {
+  display: none;
+}
+.ativo {
+  display: block !important;
+}
+
+
+#financeiro >div> p{
+  text-align: center;
+}
+
+#formServ{
+  box-sizing: border-box;
+  margin: 0 16px 32px;
+  height: auto;
+  width: 295px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#formServ button {
+  margin: 8px 0 16px;
+}
+
+#formServ select, #servicos select, #pacotes select, #lista-pacotes select {
+  text-align: center;
+  width: 80px;
+  height: 25px;
+  border: 1px solid var(--secundaria);
+  border-radius: 5px;
+
+}
+
+
+#lista-pacotes {
+  padding: 16px;
+  height: auto;
+}
+#servicos th, #lista-pacotes th{
+  color: var(--secundaria);
+}
+
+#servicos tr, #lista-pacote tr {
+  width: 640px;
+  text-align: center;
+}
+
+#agenda, #agendamentos{
+  display: flex;
+  gap: 32px;
+}
+#meuform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+
+.marcado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  gap: 16px;
+}
+
+.marcado_item {
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+
+  padding: 16px;
+  background-color: var(--terciaria);
+  position: relative;
+  z-index: 2;
+}
+
+
+#cabecalho {
+  display: flex;
+  justify-content: space-around;
+  margin: 16px 0;
+}
+
+
+.agen {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #fff;
+  border-collapse: collapse;
+  font-weight: 600;
+}
+
+#pacotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px;
+  width: 450px;
+}
+
+
+#cad-services{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+
+#cad-services p {
+  margin: 16px 0 0 0;
+  text-align: center;
+}
+
+ #servicos {
+  max-height: 310px;
+  max-width: 500px;
+}
+
+#box-pacote2 {
+  display: none;
+}
+
+#cad_fun{
+  justify-content:left;
+}
+
+#cad_fun button, #cad_cli button {
+  align-self: end;
+}
+
+
+#cad_div{
+  max-width: 400px;
+  padding: 0 32px 32px;
+  height: fit-content;
+}
+
+#lista-funcionarios, #lista_div, #cabecalho, #container {
+  max-width: 594px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+#cabecalho, #container {
+  max-width: inherit;
+}
+
+#lista_div{
+  gap: 0;
+}
+
+.func-lista {
+    height: fit-content;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.func-lista button {
+  align-self: end;
+}
+
+#func_pag, #cli_pag{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 32px;
+}
+
+#cli_div {
+  max-width: 368px;
+  padding: 0 32px 32px;
+  height: fit-content;
+}
+#lista_div, #lista_clientes{
+  max-width: 592px;
+}
+#lista_div > :first-child{
+    width: inherit;
+    height: fit-content;
+    padding: 8px 16px;
+}
+
+#pesquisa {
+  width: 408px;
+}
+
+#cad_cli {
+  justify-content: left;
+}
+
+.cli_card{
+  box-sizing: border-box;
+  width: 592px;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 32px;
+  margin-top: 8px;
+}
+
+.cli_card{
+  flex-direction: row;
+}
+
+.cli_card h4 {
+  margin: 16px 0;
+  padding: 8px;
+  width: 100%;
+  border-bottom: 1px var(--secundaria) solid;
+  border-top: 1px var(--secundaria) solid;
+}
+
+.pcts_ativos{
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px var(--secundaria) solid;
+}
+
+.pacotes-card{
+  border-top: 1px var(--secundaria) solid;
+}
+
+.cli_card p {
+  width: 100%;
+  text-align: center;
+}
+
+#busca_cli {
+  width: 32px;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+#meuform input[type="text"], #meuform input[type="date"], #meuform input[type="fone"],
+#servico, #funcio, #meuform > button{
+  width: 164px;
+}
+
+#meuform > button {
+  align-self: end;
+}
+#horario, #hora_fim, #meuform input[type="number"] {
+  width: 72px;
+}
+
+.marcado div {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: var(--secundaria) 1px solid;
+  border-radius: 5px;
+  height: 32px;
+  padding: 0 6px;
+}
+
+.box > div:nth-child(2){
+  border: none;
+}
+
+
+#sexo {
+  min-width: 80px;
+}
+
+#telefone, #cpf_cnpj {
+  width: 176px;
+}
+
+.pmpro_checkout-fields{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.pmpro_checkout-fields input, .pmpro_display-field input{
+  max-width: none !important;
+}
+
+.pmpro_checkout-field label{
+  display: inline;
+}
+
+
+#form_box, #form_box2 {
+  width: fit-content;
+  max-width: 386px;
+  display: flex;
+  flex-direction: column;
+ }
+
+ #horarios_box {
+  flex: 1 1 auto;
+ }
+
+ #rememberme {
+  width: auto;
+  height: auto;
+ }
+
+ #wp-submit {
+  background-color: var(--primaria);
+ }
+ 
+ .lista-negocios {
+     box-shadow:var(--primaria) -2px 2px 10px 1px;
+     padding: 16px;
+ }
+ 
+ #form2 {
+     max-width: 400px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 16px;
+     justify-content: space-evenly;
+ }
+ 
+ #form2 > div{
+     box-sizing: border-box;
+     height: fit-content;
+     padding: 8px;
+     width: 160px;
+     display: flex;
+     flex-direction: column;
+     border: 1px solid var(--secundaria);
+     border-radius: 5px;
+     background-color: #fff;
+ }
+ 
+ #form2 input,  #form2 select {
+     border: none;
+ }
+ 
+  #form2 select {
+      border-bottom: 1px solid var(--secundaria);
+      margin: 4px;
+  }
+
+ 
+#modal{
+    background-color: var(--terciaria);
+     border: 1px solid var(--secundaria);
+     border-radius: 5px;
+ }
+ 
+ #botao-modal{
+     background-color: transparent !important;
+     border: none !important;
+ }
+ 
+ #botao-modal button {
+     margin: 6px 0;
+ }
+ 
+ #support-button {
+     
+     z-index: 1;
+     position: fixed;
+     bottom: 16px;
+     right: 64px;
+     height: 64px;
+     width: 64px;
+     background-color: #fff;
+     border: 2px solid var(--secundaria);
+     border-radius: 50%;
+ }
+ 
+ #form_box > :nth-child(2){
+     margin-top: 2px;
+     flex: 1 0 360px;
+ }
+ 
+ #link {
+     padding: 4px;
+ }
+ 
+ #link input {
+     width: 70%;
+ }
+ 
+ .marcador {
+     font-size: 0.8rem;
+     color: grey;
+     position: absolute;
+     left: 12px;
+     top: 4px;
+     z-index: 1;
+ }
+ .agen {
+     position: relative;
+ }
+ 
+ #form_box2 form{
+     gap: 24px
+ }
+ 
+ .servico-item {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 16px;
+     background-color: #fff;
+     border: 1px solid var(--primaria);
+     border-radius: 5px;
+     padding: 16px;
+     margin: 8px 0;
+ }
+ 
+ .servico-item :nth-child(6){
+     display: flex;
+     align-items: end;
+ }
+
+.servico-item p {
+    height: 25px;
+    padding: 2px 8px;
+    border: 1px solid var(--primaria);
+    border-radius: 5px;
+}
+ 
+@media (max-width: 480px){
+
+  p {
+    width: 260px;
+  }
+  button{
+    height: 30px;
+  }
+  
+   #cad-services {
+    justify-content: center;
+   }
+    
+    .servico-item {
+        justify-content: space-around;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"]{
+    width: 260px;
+   }
+
+   input[type="tel"]{
+    width: 122px;
+   }
+
+   #bar, #bairro_fun{
+    width: 160px;
+   }
+
+   #cad_fun div {
+    width: auto;
+   }
+
+   #cad_div, #cli_div{
+    width: 260px;
+   }
+
+
+   #cad_fun button{
+    width: 260px;
+   }
+
+   .func-lista{
+    justify-content: left;
+    margin-top: 16px;
+    gap: 16px;
+    padding: 12px 32px;
+   }
+
+   .func-lista button{
+    width: 260px;
+   }
+
+   #nasc {
+    width: 124px;
+   }
+
+   #lista_div div {
+    max-width: 326px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    box-sizing: border-box;
+   }
+
+   #lista_div > :first-child{
+    width: 100%;
+    flex-wrap: nowrap;
+   }
+
+
+   #lista-clientes{
+    font-size: 12px;
+   }
+
+   .cli_card button {
+    width: 100%;
+   }
+   #bairro_cli, #tel_cli {
+    width: 144px;
+   }
+
+   input, button {
+    height: 30px;
+   }
+
+   #agenda, #agendamentos {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 320px;
+   }
+
+   #form_box, #form_box2{
+    max-width: 100%;
+   }
+
+   #meuform {
+    box-sizing: border-box;
+    padding: 16px;
+   }
+
+   #meuform input[type='tel'], #meuform input[type='text'], #meuform input[type='date'], #servico, #meuform > button {
+       width: 260px !important;
+   }
+   #meuform > button {
+       letter-spacing: 2px;
+       margin-top: 16px;
+     align-self: end;
+   }
+   #horario, #hora_fim, #meuform input[type="number"] {
+     width: 114px;
+   }
+
+   #busca_cli {
+    width: 30px;
+    height: 30px;
+    top: 0;
+   }
+
+   .lista {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px;
+    max-height: unset;
+   }
+
+   .lista > div:first-child{
+      display: block;
+      text-align: center;
+      padding: 6px 0;
+      border-right: none;
+      border-bottom: 1px solid var(--primaria);
+   }
+   .marcado div {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .marcado div p {
+    width: fit-content;
+   }
+
+   .marcado p {
+    
+    font-size: 12px;
+   }
+
+   .marcado button {
+    width: 100%;
+   }
+
+   .item{
+    height: fit-content;
+    min-height: 128px;
+   }
+
+   .agen {
+    min-height: 128px;
+   }
+
+   .marcado_item {
+    box-sizing: border-box !important; 
+   }
+
+   #cabecalho {
+    margin: 0;
+    flex-wrap: nowrap;
+    padding: 8px;
+   }
+
+   .financeiro-dados{
+    order: 1;
+    margin: 16px 0 !important;
+   }
+
+   .lista-servicos{
+    gap: 16px !important;
+   }
+
+   .lista-servicos div {
+    flex-basis: 288px !important;
+   }
+
+   .topo-index {
+    margin-top: 32px !important;
+   }
+
+   .index-img {
+    order: 1;
+    margin-bottom: 16px;
+   }
+
+   .pmpro_checkout-fields {
+    width: auto;
+   }
+
+   .pmpro_form input[type='text'], .pmpro_form select{
+    width: 240px !important;
+   }
+
+   .pmpro_payment-expiration select {
+    width: 80px !important;
+   }
+
+   #CVV {
+    width: 80px !important;
+   }
+}
+@media (max-width: 767px){
+
+ .scroll {
+  max-height: 500px;
+  overflow: auto;
+ }
+
+  #relatorio, #gastos {
+    width: 300px;
+    margin: 16px 0;
+    box-sizing: border-box;
+  }
+
+
+  #form_finan {
+    box-sizing: border-box;
+  }
+
+  
+#form_finan div, #relat_form div {
+  display: inline-block;
+}
+
+
+#tabela th {
+  padding: 16px 8px;
+}
+
+
+#formServ button {
+  margin: 16px 0 0;
+}
+
+#servicos td, #servicos input, #servicos button {
+  width: 80px;
+}
+
+
+input, button {
+  height: 30px;
+ }
+
+ #agenda, #agendamentos {
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+ #form_box, #form_box2 {
+  width: 376px;
+ }
+
+ #meuform {
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 16px;
+ }
+
+ .marcado_item {
+  box-sizing: content-box;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+  #formServ {
+    justify-content: space-between;
+  }
+
+
+ #servicos {
+  margin:auto;
+  margin-top: 32px;
+ }
+
+ #salvMud {
+  margin-left: 48px;
+ }
+}
